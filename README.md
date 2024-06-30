@@ -6,7 +6,7 @@ AcademicHub is a cutting-edge university school web application designed to stre
  ![home](https://github.com/Srujalshete/AcademicHub/assets/67551839/38d66006-c58a-4cd4-8623-d6a1ea8bda87)
 
 
-**Note**: This is a client project, and due to confidentiality agreements, I am unable to provide access to all necessary files and the database.
+**Note**: This is a client-based project (Not yet delivered and confirmed), But due to confidentiality agreements, I am unable to provide access to all necessary files and the database.
 
 ## Features
 
