@@ -3,7 +3,8 @@
 AcademicHub is a cutting-edge university school web application designed to streamline academic management and enhance student engagement. Built with modern technologies including Vite, React, Node.js, Chart.js, MySQL database, Express.js, Nodemon, Tailwind CSS, and Heroicons, AcademicHub aims to revolutionize how educational institutions manage their operations.
 
 
-![Uploading home.png…]()
+ ![home](https://github.com/Srujalshete/AcademicHub/assets/67551839/38d66006-c58a-4cd4-8623-d6a1ea8bda87)
+
 
 **Note**: This is a client project, and due to confidentiality agreements, I am unable to provide access to all necessary files and the database.
 
