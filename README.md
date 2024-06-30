@@ -41,8 +41,10 @@ To get a local copy up and running, follow these steps:
 4. Start the backend server with `npm start`.
 5. Access AcademicHub at `http://localhost:5173` in your browser.
 
-## Contributing
+## Technologies Used
+AcademicHub utilizes a robust tech stack including Vite, React.js, Node.js, Express.js, MySQL database, Chart.js for data visualization, Tailwind CSS for styling, and Heroicons for icons. Development processes are facilitated with tools like Jira for project management using Kanban methodology, API keys for secure integrations, and Postman for API testing.
 
+## Contributing
 Contributions are welcome! Fork the repository, make improvements, and submit a pull request. Your ideas and enhancements are valuable to us as we strive to make AcademicHub the best it can be.
 
 ## License
