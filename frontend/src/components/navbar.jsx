@@ -14,9 +14,9 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 const products = [
   { name: 'Campus Map', description: 'Get a better understanding of your traffic', href: '/campus ', icon: ChartPieIcon },
   { name: 'Virtual Tour', description: 'Speak directly to our Representative', href: '/tour', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your child will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Facilities Overview', description: 'Live amazing school life', href: '#', icon: SquaresPlusIcon },
-  { name: 'Transportation', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+  { name: 'Security', description: 'Your child will be safe and secure', href: '/beam', icon: FingerPrintIcon },
+  { name: 'Facilities Overview', description: 'Live amazing school life', href: '/facility', icon: SquaresPlusIcon },
+  { name: 'Transportation', description: 'Build strategic funnels that will convert', href: '/transport', icon: ArrowPathIcon },
 ];
 
 const callsToAction = [
@@ -24,13 +24,7 @@ const callsToAction = [
   { name: 'Contact us', href: '/contact', icon: PhoneIcon },
 ];
 
-const curriculumProducts = [
-  { name: 'Academic Programs', description: 'Explore our academic offerings', href: '#', icon: ChartPieIcon },
-  { name: 'Course Catalog', description: 'Browse our courses', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Departments', description: 'Learn about our academic departments', href: '#', icon: FingerPrintIcon },
-  { name: 'Academic Calendar', description: 'View our academic schedule', href: '#', icon: SquaresPlusIcon },
-  { name: 'Grading Policy', description: 'Understand our grading system', href: '#', icon: ArrowPathIcon },
-];
+ 
 
 const marketplaceProducts = [
   { name: 'Boarding Facilities', description: 'Discover our boarding amenities', href: '#', icon: ChartPieIcon },
@@ -43,7 +37,7 @@ const marketplaceProducts = [
 const companyProducts = [
   { name: 'Extracurricular Activities', description: 'Explore our extracurricular offerings', href: '#', icon: ChartPieIcon },
   { name: 'Sports Programs', description: 'Learn about our sports programs', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Community Service', description: 'Information about community service', href: '#', icon: FingerPrintIcon },
+  { name: 'Community Service', description: 'Information about community service', href: '/leadership', icon: FingerPrintIcon },
   { name: 'Career Counseling', description: 'Guidance on career planning', href: '/career', icon: SquaresPlusIcon },
   { name: 'Alumni Network', description: 'Connect with our alumni community', href: '/alumini', icon: ArrowPathIcon },
 ];
@@ -130,44 +124,7 @@ export default function Example() {
             </Transition>
           </Popover>
 
-          <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              Curriculum
-              <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-            </Popover.Button>
-
-            <Transition
-              as={Fragment}
-              enter="transition ease-out duration-200"
-              enterFrom="opacity-0 translate-y-1"
-              enterTo="opacity-100 translate-y-0"
-              leave="transition ease-in duration-150"
-              leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 translate-y-1"
-            >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
-                <div className="p-4">
-                  {curriculumProducts.map((item) => (
-                    <div
-                      key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
-                    >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
-                      </div>
-                      <div className="flex-auto">
-                        <a href={item.href} className="block font-semibold text-gray-900">
-                          {item.name}
-                          <span className="absolute inset-0" />
-                        </a>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </Popover.Panel>
-            </Transition>
-          </Popover>
+         
 
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
@@ -397,6 +354,11 @@ export default function Example() {
          </div>
        </Dialog.Panel>
      </Dialog>
+     <div className="w-full bg-yellow-500 text-white text-center py-2 font-bold">
+          <p className="whitespace-nowrap overflow-hidden overflow-x-auto">
+            <span className="inline-block animate-marquee">This project is still in development phase. Stay tuned for updates!</span>
+          </p>
+        </div>  
    </header>
  );
 }

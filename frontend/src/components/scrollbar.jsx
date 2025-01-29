@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Marquee from './slider';
 
 function scrollbar() {
   return (
@@ -11,6 +12,7 @@ function scrollbar() {
 </h2> 
             </div>
         </div>
+        <Marquee repeat={3} pauseOnHover className="mt-9">
     <div className="grid gap-8 grid-cols-2 md:gap-y-16 md:grid-cols-6">
         <span className="w-full flex items-center justify-center">
             <span className="sr-only">Salesforce logo.</span>
@@ -238,6 +240,7 @@ function scrollbar() {
         </div></span>
 
     </div>
+    </Marquee>
 </section></>
   )
 }

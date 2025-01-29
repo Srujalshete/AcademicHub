@@ -9,11 +9,7 @@ import image5 from '../assets/img-05.jpg';
 import image6 from '../assets/img-06.jpg';
 import image7 from '../assets/img-07.jpg';
 import image8 from '../assets/img-08.jpg';
-// import image9 from '../assets/img-09.jpg';
-// import image10 from '../assets/img-10.jpg';
-// import image11 from '../assets/img-11.jpg';
-// import image12 from '../assets/img-12.jpg';
-
+ 
 const Gallery = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(image1); // Initial image to display in main gallery

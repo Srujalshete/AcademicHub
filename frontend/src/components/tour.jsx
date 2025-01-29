@@ -3,7 +3,8 @@ import Navbar from './navbar';
 import Footer from './footer';
 import Map from './map';
 import SuccessPopup from '../components/step/submit';
-import Slider from './slidercontect';
+import Scrollbar from './scrollbar';
+import { TracingBeam } from "./ui/tracing-beam";
 
 function Tour() {
   const [showSuccess, setShowSuccess] = useState(false);
@@ -22,9 +23,11 @@ function Tour() {
 
   return (
     <div>
+      
       <Navbar />
+      <TracingBeam className="px-6">
       <Map />
-      <div className="mx-4 md:mx-14 mt-6 md:mt-10 border-2 border-blue-400 rounded-lg">
+      <div className="mx-4 md:mx-14 mt-6 md:mt-10 mb-8 sborder-2 border-blue-400 rounded-lg">
         <div className="mt-6 md:mt-10 text-center font-bold text-black">Contact Us</div>
         <div className="mt-3 text-center text-2xl md:text-4xl font-bold text-black">Make an Appointment</div>
         <div className="p-4 md:p-8">
@@ -94,7 +97,8 @@ function Tour() {
           {showSuccess && <SuccessPopup onClose={closeSuccessPopup} />}
         </div>
       </div>
-      <Slider/>
+      <Scrollbar />
+      </TracingBeam>
       <Footer />
     </div>
   );

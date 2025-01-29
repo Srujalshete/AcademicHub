@@ -8,6 +8,7 @@ function Contactus() {
   return (
   <>
   <Navbar/>
+  
   <Map/>
 <div>
   <section className="py-24">
@@ -137,8 +138,11 @@ function Contactus() {
 </section>
                                  
 </div>
+
 <FAQ/>
+  
 <Footer/>
+
 </>
                                        
   )
